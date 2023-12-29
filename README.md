@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# GDP Data Visualization App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This React application fetches GDP data from a JSON file and visualizes it using a bar chart. The data is sourced from [freeCodeCamp](https://www.freecodecamp.org/), and the chart displays the GDP data over time.
 
-## Available Scripts
+## Deployed Application
 
-In the project directory, you can run:
+The application is deployed and can be accessed at [Deployed Link](https://bostonbachexchange.github.io/usa-gdp-bar-chart/).
 
-### `npm start`
+## Usage
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To run this application locally, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Clone the repository:**
 
-### `npm test`
+   ```bash
+   git clone https://github.com/bostonbachexchange/usa-gdp-bar-chart.git
+   cd your-react-project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. install dependencies:
+npm install
 
-### `npm run build`
+2. Start the development server:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Open your browser and navigate to http://localhost:3000 to view the application.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project Structure
 
-### `npm run eject`
+App.js: The main component fetches GDP data, renders the bar chart, and dynamically sets the title based on the data source.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Dependencies
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[React](https://react.dev): A JavaScript library for building user interfaces.
+[D3.js](https://d3js.org): A JavaScript library for manipulating documents based on data. Used for creating the bar chart.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Data Source
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The GDP data is fetched from the following URL:
 
-## Learn More
+GDP Data
+Deployed Application
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The application is deployed and can be accessed at Deployed Link.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Bar Chart Features
 
-### Code Splitting
+X-axis: Represents the date of the GDP data.
+Y-axis: Represents the GDP values in billions.
+Color Coding: Alternating colors for better visualization.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Additional Information
 
-### Analyzing the Bundle Size
+The project uses React hooks, including useEffect and useState, for fetching and managing data.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+D3.js is employed for creating the bar chart and handling interactivity.
 
-### Making a Progressive Web App
+The tooltip displays detailed information about each data point when hovered over.
+The x-axis is labeled with time-based data using a time scale.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to explore, modify, and expand upon this project for your needs! If you have any questions or suggestions, please don't hesitate to reach out.
